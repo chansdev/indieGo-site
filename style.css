@@ -1,0 +1,14 @@
+/* geral */
+@import url("./css/geral.css");
+
+/* ultitário */
+@import url("./css/ultilitário.css");
+
+/* header */
+@import url("./css/header.css");
+
+/* head */
+@import url("./css/head.css");
+
+/* usar nivel de fonte 400 e 700 */
+/* ordem de diminuir o tamanho 1050 770 575 */

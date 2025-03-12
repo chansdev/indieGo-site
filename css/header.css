@@ -1,0 +1,82 @@
+header {
+  display: grid;
+}
+
+header .box {
+  display: flex;
+  padding: 10px;
+  gap: 30px;
+  justify-content: center;
+  background-color: #19063b;
+}
+
+header .box .link {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  color: #c5a9eb;
+  font-size: 30px;
+}
+
+header .box .link:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+header .box .link::before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  top: 33px;
+  left: 0px;
+  width: 0%;
+  height: 3px;
+}
+
+header .box .link:hover::before {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.botaoTubarao {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 1050px) {
+  header .box {
+    gap: 25px;
+  }
+  header .box .link {
+    font-size: 25px;
+  }
+  .botaoTubarao {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 770px) {
+  header .box {
+    gap: 20px;
+  }
+  header .box .link {
+    font-size: 20px;
+  }
+  .botaoTubarao {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  header .box {
+    gap: 17px;
+  }
+  header .box .link {
+    font-size: 17px;
+  }
+  .botaoTubarao {
+    width: 27px;
+    height: 27px;
+  }
+}

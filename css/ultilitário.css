@@ -1,0 +1,37 @@
+.titulo1 {
+  font-size: 170px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.texto1 {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 1050px) {
+  .titulo1 {
+    font-size: 120px;
+  }
+  .texto1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 770px) {
+  .titulo1 {
+    font-size: 90px;
+  }
+  .texto1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .titulo1 {
+    font-size: 60px;
+  }
+  .texto1 {
+    font-size: 17px;
+  }
+}
