@@ -1,0 +1,160 @@
+#socios {
+  background-color: #2a114b;
+  padding: var(--padding-grande);
+  padding-top: 0;
+  background-image: url("../img/ondas3.png");
+  background-size: 450px 150px;
+  background-repeat: no-repeat;
+  background-position: right 100px top 10px;
+
+  .titulo1 {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    justify-self: end;
+    align-self: start;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    .coluna {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-content: center;
+      gap: 20px;
+
+      .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px 20px;
+
+        img {
+          width: 220px;
+          height: 220px;
+          align-self: end;
+        }
+
+        .classe {
+          font-size: 25px;
+          text-align: center;
+          font-weight: bold;
+        }
+
+        .balao {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto 1fr;
+
+          .nome {
+            font-family: "Boldonse", sans-serif;
+            font-size: 22px;
+            color: white;
+            text-align: center;
+          }
+
+          .dialogo {
+            padding: 0 7px;
+            padding-bottom: 35px;
+            font-size: 26px;
+            text-align: center;
+            align-content: center;
+            background-image: url("../img/dialogo-bg.png");
+            background-size: 100% 90%;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  #socios {
+    .content {
+      .coluna {
+        .box {
+          .balao {
+            .dialogo {
+              height: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1110px) {
+  #socios {
+    background-position-x: center;
+    background-position-y: 80px;
+    background-size: 400px 120px;
+
+    .titulo1 {
+      padding: 60px 0;
+      padding-bottom: 80px;
+      justify-self: center;
+    }
+
+    .content {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 20px;
+
+      .coluna {
+        .box {
+          .balao {
+            justify-self: start;
+          }
+
+          justify-items: center;
+          .balao {
+            .dialogo {
+              padding: 0 20px;
+              padding-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  #socios {
+    padding: var(--padding-pequeno);
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  #socios {
+    .content {
+      .coluna {
+        .box {
+          grid-template-columns: 1fr;
+
+          .classe {
+            grid-row: 2;
+          }
+          .balao {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-self: center;
+
+            .dialogo {
+              padding: 0 20px;
+              padding-top: 30px;
+              margin-bottom: 20px;
+              text-align: center;
+              background-image: url("../img/dialogo-invertido-bg.png");
+            }
+          }
+        }
+      }
+    }
+  }
+}

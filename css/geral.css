@@ -1,0 +1,23 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  z-index: 999;
+}
+
+html {
+  text-wrap: balance;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 100%;
+}

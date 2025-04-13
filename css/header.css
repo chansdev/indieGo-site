@@ -1,0 +1,46 @@
+.header-bg {
+  display: grid;
+  justify-content: center;
+  height: 85px;
+  background-color: #19063b;
+}
+
+header nav {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+header nav a {
+  position: relative;
+  font-family: "Nunito Sans", sans-serif;
+  color: #c5a9eb;
+  font-size: 28px;
+}
+
+header nav a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+header nav a::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0px;
+  right: -12px;
+  background-color: #c5a9eb;
+}
+
+header nav a:last-child::after {
+  display: none;
+}
+
+@media (max-width: 540px) {
+  header {
+    nav a {
+      font-size: 23px;
+    }
+  }
+}

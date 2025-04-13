@@ -1,0 +1,59 @@
+#sobre {
+  position: relative;
+  display: grid;
+  background-color: #7c3cd4;
+
+  .sobre-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: var(--padding-grande);
+    padding-top: 0;
+    z-index: 1;
+
+    .titulo1 {
+      padding: 0 30px;
+      margin-top: 30px;
+      background-image: url("../img/ondas1.png");
+      background-position-y: 20px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .texto1 {
+      text-align: center;
+    }
+  }
+
+  .sobre-onda {
+    position: absolute;
+    bottom: -6px;
+    right: 0px;
+    width: 100%;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 1195px) {
+  #sobre {
+    .sobre-content {
+      grid-template-columns: 1fr;
+
+      .titulo1 {
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+        background-position-x: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  #sobre {
+    .sobre-content {
+      padding: var(--padding-pequeno);
+      padding-top: 0;
+      padding-bottom: 60px;
+    }
+  }
+}

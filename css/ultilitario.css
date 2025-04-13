@@ -1,0 +1,45 @@
+:root {
+  --padding-grande: 100px;
+  --padding-pequeno: 30px;
+}
+
+.titulo1 {
+  font-family: "Boldonse", sans-serif;
+  font-size: 85px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 10px;
+  color: white;
+}
+
+.titulo2 {
+  font-family: "Boldonse", sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+}
+
+.texto1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .titulo1 {
+    font-size: 70px;
+    letter-spacing: normal;
+  }
+
+  .texto1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  .titulo1 {
+    font-size: 60px;
+  }
+}
